@@ -1,0 +1,24 @@
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.8. Set the 'ServerName' directive globally to suppress this message
+[Wed Aug 31 20:20:00.883795 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.9 configured -- resuming normal operations
+[Wed Aug 31 20:20:00.883852 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Aug 31 20:20:50.922112 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.8. Set the 'ServerName' directive globally to suppress this message
+[Wed Aug 31 20:21:05.658485 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.9 configured -- resuming normal operations
+[Wed Aug 31 20:21:05.658516 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Aug 31 20:21:25.245617 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.8. Set the 'ServerName' directive globally to suppress this message
+[Wed Aug 31 20:24:18.521278 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.9 configured -- resuming normal operations
+[Wed Aug 31 20:24:18.521320 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Aug 31 20:25:26.833607 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.8. Set the 'ServerName' directive globally to suppress this message
+[Wed Aug 31 20:28:00.311847 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.9 configured -- resuming normal operations
+[Wed Aug 31 20:28:00.311885 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Aug 31 20:29:20.293523 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00112: Warning: DocumentRoot [/var/www/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.8. Set the 'ServerName' directive globally to suppress this message
+[Wed Aug 31 20:29:26.149483 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.9 configured -- resuming normal operations
+[Wed Aug 31 20:29:26.149523 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  laravel_ead:
+    container_name: laravel_ead
+    build: ./
+    working_dir: /var/www
+    ports:
+      - 8093:80
+    volumes:
+      - ./.docker/php.ini:/usr/local/etc/php/php.ini
+      - ./.docker/logs:/var/log/apache2
+      - ./:/var/www
+      #- ~/.ssh/id_rsa:/user/.ssh/id_rsa
+    networks:
+      - localnet
+
+networks:
+  localnet:
+    external: true
