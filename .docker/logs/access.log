@@ -33,3 +33,8 @@
 172.18.0.1 - - [02/Sep/2022:11:51:44 +0000] "GET /admin HTTP/1.1" 200 4108 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
 172.18.0.1 - - [02/Sep/2022:11:51:44 +0000] "GET /images/user.png HTTP/1.1" 200 3125 "http://localhost:8093/admin" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
 172.18.0.1 - - [02/Sep/2022:11:51:51 +0000] "GET /admin HTTP/1.1" 200 4108 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.18.0.1 - - [02/Sep/2022:11:53:52 +0000] "GET /admin HTTP/1.1" 200 4108 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.18.0.1 - - [02/Sep/2022:11:53:52 +0000] "GET /images/user.png HTTP/1.1" 304 248 "http://localhost:8093/admin" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.18.0.1 - - [02/Sep/2022:12:52:37 +0000] "GET /admin HTTP/1.1" 200 4108 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.18.0.1 - - [02/Sep/2022:12:52:37 +0000] "GET /images/user.png HTTP/1.1" 304 248 "http://localhost:8093/admin" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.18.0.1 - - [02/Sep/2022:12:52:37 +0000] "GET /favicon.ico HTTP/1.1" 200 295 "http://localhost:8093/admin" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
