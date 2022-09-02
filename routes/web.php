@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.home');
 
+    // Routes Admin
+    Route::put('/admins/{id}/update-image', [AdminController::class, 'uploadFile'])->name('admins.update.image');
+    Route::get('/admins/{id}/image', [AdminController::class, 'changeImage'])->name('admins.change.image');
+    Route::resource('/admins', AdminController::class);
+
     // Routes Users
     Route::put('/users/{id}/update-image', [UserController::class, 'uploadFile'])->name('users.update.image');
     Route::get('/users/{id}/image', [UserController::class, 'changeImage'])->name('users.change.image');
