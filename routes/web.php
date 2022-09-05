@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\ModuleController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,9 @@ Route::prefix('admin')->group(function () {
         name: '/courses/{courseId}/modules',
         controller: ModuleController::class,
     );
+
+    // Lessons
+    Route::resource('/modules/{moduleId}/lessons', LessonController::class);
 });
 
 Route::get('/logout')->name('logout');
