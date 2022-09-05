@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\ModuleController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.home');
+    //Route::get('/', [DashboardController::class, 'index'])->name('admin.home');
 
     // Routes Admin
     Route::put('/admins/{id}/update-image', [AdminController::class, 'uploadFile'])->name('admins.update.image');
@@ -23,7 +26,14 @@ Route::prefix('admin')->group(function () {
     Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
     Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
-    Route::get('/', [DashboardController::class, 'index'])->name('admin.home');
+    // Routes Course
+    Route::resource('/courses', CourseController::class);
+
+    // Modules
+    Route::resource(
+        name: '/courses/{courseId}/modules',
+        controller: ModuleController::class,
+    );
 });
 
 Route::get('/logout')->name('logout');
