@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\ModuleController;
 use App\Http\Controllers\Admin\ReplySupportController;
@@ -9,7 +10,7 @@ use App\Http\Controllers\Admin\SupportController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.home');
     //Route::get('/', [DashboardController::class, 'index'])->name('admin.home');
 
@@ -47,10 +48,12 @@ Route::prefix('admin')->group(function () {
 
     // Reply Support
     Route::post('/supports/{id}/reply', [ReplySupportController::class, 'store'])->name('replies.store');
-});
 
-Route::get('/logout')->name('logout');
+    Route::get('/', [DashboardController::class, 'index'])->name('admin.home');
+});
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+require __DIR__.'/auth.php';
