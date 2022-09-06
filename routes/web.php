@@ -4,6 +4,8 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\ModuleController;
+use App\Http\Controllers\Admin\ReplySupportController;
+use App\Http\Controllers\Admin\SupportController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +40,13 @@ Route::prefix('admin')->group(function () {
 
     // Lessons
     Route::resource('/modules/{moduleId}/lessons', LessonController::class);
+
+    // Supports
+    Route::get('/supports/{id}', [SupportController::class, 'show'])->name('supports.show');
+    Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
+
+    // Reply Support
+    Route::post('/supports/{id}/reply', [ReplySupportController::class, 'store'])->name('replies.store');
 });
 
 Route::get('/logout')->name('logout');

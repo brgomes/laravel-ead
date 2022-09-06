@@ -5,11 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class RepplySupport extends Model
+class ReplySupport extends Model
 {
     use HasFactory;
 
-    protected $table = 'reply_support';
+    /**
+     * Indicates if the model's ID is auto-incrementing.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+    protected $table = 'repply_support';
 
     protected $fillable = [
         'user_id', 'admin_id', 'support_id', 'description'
